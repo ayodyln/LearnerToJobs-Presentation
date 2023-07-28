@@ -1,12 +1,24 @@
 <script lang="ts">
-	// The ordering of these imports is critical to your app working properly
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	// Most of your app wide CSS should be put in this file
-	import '../app.postcss';
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
+	import '@skeletonlabs/skeleton/styles/skeleton.css'
+	import '../app.postcss'
+
+	import { AppShell } from '@skeletonlabs/skeleton'
+
+	import { Header, Footer } from '$lib/components'
 </script>
 
-<div class="flex flex-col overflow-hidden h-screen">
+<AppShell
+	slotPageContent="flex justify-center items-center"
+	slotPageFooter="card rounded-none p-2 flex justify-between items-center"
+>
+	<svelte:fragment slot="header">
+		<Header />
+	</svelte:fragment>
+
 	<slot />
-</div>
+
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
+</AppShell>
