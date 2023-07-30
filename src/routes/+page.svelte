@@ -39,6 +39,14 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Learner to Jobs Project Presentation</title>
+	<meta
+		name="description"
+		content="UVU Senior Capstone group for the Learner to Jobs project's presentation for the first semester."
+	/>
+</svelte:head>
+
 <svelte:window on:keydown={slideHandler} />
 
 <section
