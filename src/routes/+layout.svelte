@@ -9,8 +9,9 @@
 </script>
 
 <AppShell
-	slotPageContent="flex justify-center items-center"
-	slotPageFooter="card rounded-none p-2 flex justify-between items-center"
+	slotHeader="antialiased"
+	slotPageContent="antialiased"
+	slotPageFooter="card rounded-none p-2 flex justify-between items-center antialiased"
 >
 	<svelte:fragment slot="header">
 		<Header />
