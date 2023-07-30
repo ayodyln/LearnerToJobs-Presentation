@@ -1,6 +1,6 @@
 <header class="card rounded-none p-2 flex items-center justify-between">
 	<div id="title" class="">
-		<h1 class="h2 text-secondary-500">Learner to Jobs</h1>
+		<h1 class="h2">Learner to Jobs</h1>
 	</div>
 
 	<a
